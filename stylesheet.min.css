@@ -1,0 +1,2 @@
+body,html{width:100vw;height:100vh;background-color:gray;overflow:hidden}.box{display:block;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);height:80vh;width:80vh;background-color:black}.back{background-color:white}
+/*# sourceMappingURL=stylesheet.min.css.map */

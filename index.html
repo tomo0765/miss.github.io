@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>What is missing here?</title>
+		<link rel="stylesheet" href="stylesheet.min.css" />
+	</head>
+	<body>
+		<div class="box"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(function() {
+				var n = 1;
+				$('html').keyup(function(e) {
+					switch (e.which) {
+						case 39:
+							if (n % 3 != 0) {
+								n++;
+								$('.box').toggleClass('back');
+							}
+							break;
+
+						case 37:
+							if (n % 3 != 1) {
+								n--;
+								$('.box').toggleClass('back');
+							}
+							break;
+
+						case 38:
+							if(n>3 && n<10) {
+                                n-=3;
+                                $('.box').toggleClass('back');
+                            }
+							break;
+
+						case 40:
+                        if(n>0 && n<7) {
+                                n+=3;
+                                $('.box').toggleClass('back');
+                            }
+							break;
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
